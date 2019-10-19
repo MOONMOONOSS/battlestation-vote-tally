@@ -1,0 +1,6 @@
+discord:
+  command: "m!"
+  guild_id: 553454168631934977
+  voting_channel_id: 635077619922239498
+  results_channel_id: 635078034700894228
+  user_ids: [539881999926689829]
