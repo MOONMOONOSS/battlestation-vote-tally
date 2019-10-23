@@ -99,6 +99,7 @@ class Sayo(object):
 
         messages = await voting_channel.history(limit=100).flatten()
         messages = sorted(messages, key=lambda msg: sum([react.count for react in msg.reactions]), reverse=True)
+        if len(messages) > 8: messages = messages[:8]
 
         results_channel = sayo.client.get_channel(results_channel_id)
 
